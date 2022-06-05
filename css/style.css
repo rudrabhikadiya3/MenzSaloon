@@ -10,6 +10,9 @@
     --bs-link-hover-color: #bc9355;
     --bs-link-color: #111010;
 }
+*{
+    line-height: 1.5;
+}
 body{
     background-color: var(--background-dark);
     font-family: var(--primary-font);
@@ -40,6 +43,7 @@ p{
     z-index: 1;
     color: var(--background-dark);
     overflow: hidden;
+    font-weight: 500;
 }
 .btn-primary::after, .btn-primary::before{
     content: '';
@@ -55,7 +59,7 @@ p{
 }
 .btn-primary::before{
     left: 100%;
-    transform: translateX(100%);
+    transform: translateX(0);
 }
 .btn-primary:hover::after{
     transform: translateX(0);
@@ -67,6 +71,9 @@ p{
     background-color: transparent;
     color: var(--white);
     border-color: var(--bs-primary);
+}
+form .list-group .list-group-item i{
+    color: var();
 }
 
 
