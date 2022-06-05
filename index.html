@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MenzSaloon | We'll style while you smile</title>
+
+    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
+    <!-- custom stylesheet -->
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+
+    <!-- icons(bootstap) -->
+    <link rel="stylesheet" href="css/bootstrap-icons.css">
+</head>
+
+<body>
+
+    <div class="alert bg-primary text-white alert-dismissible fade show border-0 rounded-0 mb-0" role="alert">
+        <p class="text-center"><strong></i><a href="#" class="link-light ms-1" data-bs-toggle="modal"
+                    data-bs-target="#member">GET MEMBERSHIP</a></strong> and get 50%
+            off in hair and facial treatments
+        </p>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="alert" aria-label="Close"></button>
+    </div>
+
+
+    <!-- Modal -->
+    <div class="modal fade" id="member" tabindex="-1" aria-labelledby="member" aria-hidden="true">
+        <div class="modal-dialog  modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <ul class="nav nav-tabs justify-content-around w-100" id="myTab" role="tablist">
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link w-100 px-5 active" id="home-tab" data-bs-toggle="tab"
+                                data-bs-target="#home-tab-pane" type="button" role="tab" aria-controls="home-tab-pane"
+                                aria-selected="true">Monthly plans</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link px-5" id="profile-tab" data-bs-toggle="tab"
+                                data-bs-target="#profile-tab-pane" type="button" role="tab"
+                                aria-controls="profile-tab-pane" aria-selected="false">Yearly plans</button>
+                        </li>
+
+                    </ul>
+                </div>
+                <button type="button" class="btn-close btn-close-white position-absolute bottom-100 end-0 my-2"
+                    data-bs-dismiss="modal" aria-label="Close"></button>
+                <div class="modal-body">
+                    <div class="tab-content" id="myTabContent">
+                        <div class="tab-pane fade show active" id="home-tab-pane" role="tabpanel"
+                            aria-labelledby="home-tab" tabindex="0">
+                            <!-- Monthly plans content -->
+                            <form>
+                                <div class="mb-3">
+                                    <input type="text" class="form-control" placeholder="Full name">
+                                  </div>
+                                <div class="mb-3">
+                                  <input type="email" class="form-control" aria-describedby="emailHelp" placeholder="Enter Email">
+                                </div>
+                                
+                                <div class="mb-3 form-check">
+                                  <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                  <label class="form-check-label" for="exampleCheck1" >
+                                      <a href="#" class="text-decoration-none">Terms & Conditions</a>
+                                  </label>
+                                </div>
+
+                                <button type="submit" class="btn btn-primary w-100">Submit</button> 
+                              </form>
+                        </div>
+                        <div class="tab-pane fade" id="profile-tab-pane" role="tabpanel" aria-labelledby="profile-tab"
+                            tabindex="0">.345345..</div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+    <script src="js/jquery-3.6.0.min.js" type="text/javascript"></script>
+    <script src="js/bootstrap.bundle.min.js" type="text/javascript"></script>
+</body>
+
+</html>

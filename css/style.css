@@ -1,0 +1,72 @@
+:root{
+    --primary-font : 'Open Sans';
+    --heading-font : 'Playfair Display';
+    --gray : #b2b2b2;
+    --white : #fff;
+    --background-light : #1f2125;
+    --background-dark : #111010;
+    --bs-primary: #bc9355;
+    --bs-primary-rgb: 188, 147, 85;
+    --bs-link-hover-color: #bc9355;
+    --bs-link-color: #111010;
+}
+body{
+    background-color: var(--background-dark);
+    font-family: var(--primary-font);
+    color: var(--gray);
+}
+p{
+    margin: 0;
+}
+.nav-tabs .nav-link,.nav-tabs{
+    border: 0;
+    font-family: var(--heading-font);
+    font-size: 22px;
+    border-radius: 0;
+    transition: all .5s;
+}
+.nav-tabs .nav-link:focus,.nav-tabs .nav-link:hover{
+    border: none;
+    outline: 2px solid var(--bs-primary);
+    color: var(--bs-primary);
+    background-color: #1f2125;
+}
+.btn-primary{
+    background-color: transparent;
+    color: var(--white);
+    border: 1px solid var(--bs-primary);
+    position: relative;
+    border-radius: 0;
+    z-index: 1;
+    color: var(--background-dark);
+    overflow: hidden;
+}
+.btn-primary::after, .btn-primary::before{
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 50%;
+    background-color: var(--bs-primary);
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: all .5s;
+    transform: translateX(-100%);
+}
+.btn-primary::before{
+    left: 100%;
+    transform: translateX(100%);
+}
+.btn-primary:hover::after{
+    transform: translateX(0);
+}
+.btn-primary:hover::before{
+    transform: translateX(-100%);
+}
+.btn-primary:hover{
+    background-color: transparent;
+    color: var(--white);
+    border-color: var(--bs-primary);
+}
+
+
