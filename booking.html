@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MenzSaloon | Booking</title>
+
+    <!-- font -->
+    <link rel="stylesheet" href="css/font.css" type="text/css">
+
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
+
+    <!-- custom stylesheet -->
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+
+    <!-- icons(bootstap) -->
+    <link rel="stylesheet" href="css/bootstrap-icons.css" type="text/css">
+
+    <!-- custom media -->
+    <link rel="stylesheet" href="css/media.css " type="text/css">
+</head>
+
+<body>
+
+    <header>
+        <!-- navigation menu -->
+        <nav class="navbar navbar-expand-lg  py-0">
+            <div class="container justify-content-between">
+                <a class="navbar-brand" href="index.html">
+                    <img src="img/white-logo.png" alt="logo">
+                </a>
+                <button class="navbar-toggler  bg-white" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon text-primary"></span>
+                </button>
+                <div class="collapse navbar-collapse flex-grow-0" id="navbarSupportedContent">
+                    <ul class="navbar-nav  mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link py-0 active" aria-current="page" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link py-0 " href="about.html">About</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link py-0 dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">Services</a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="services.html">service 2 column</a></li>
+                                <li><a class="dropdown-item" href="services.html">service 3 column</a></li>
+                                <li><a class="dropdown-item" href="services.html">Single service</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link py-0" href="booking.html">Booking</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link py-0 dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">Pages</a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="#">Accordion</a></li>
+                                <li><a class="dropdown-item" href="#">Alert</a></li>
+                                <li><a class="dropdown-item" href="#">Dropcap</a></li>
+                                <li><a class="dropdown-item" href="#">Team Page</a></li>
+                                <li><a class="dropdown-item" href="#">Pricing</a></li>
+                                <li><a class="dropdown-item" href="#">Tab Page</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link py-0 dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">Contact</a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="contact.html">Contact 1</a></li>
+                                <li><a class="dropdown-item" href="contact.html">Contact 2</a></li>
+                                <li><a class="dropdown-item" href="contact.html">Contact 3</a></li>
+                            </ul>
+                        </li>
+                        <div class="nav-item">
+                            <a href="tel:+1334-4679-3431" class="text-decoration-none nav-link py-0"><i
+                                    class="bi bi-telephone me-2"></i>
+                                823-23-2323</a>
+                        </div>
+                    </ul>
+
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!--  page header banner -->
+        <section class="banner booking ">
+            <div class="container">
+                <div class="row text-center">
+                    <div class="banner-img-box mb-3">
+                        <img src="img/mass-head-logo.png" alt="mass-head-logo" class="img-fluid">
+                    </div>
+                    <h2 class="text-primary">Booking Page</h2>
+                </div>
+            </div>
+        </section>
+        <!-- Booking form section -->
+        <section class="about-main py-120 position-relative">
+            <div class="container">
+                <div class="row">
+                    <!-- scissor icon -->
+                    <div class="page-section-icon">
+                        <i class="bi bi-scissors"></i>
+                    </div>
+                    <!-- section heading -->
+                    <div class="section-title text-center ">
+                        <img src="img/title-img-2.png" alt="title-img-2" class="img-fluid">
+                        <h2 class="text-uppercase fs-2 text-light">Book Now</h2>
+                        <p class="mb-5">A wide range of male grooming services under one roof</p>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-lg-6 col-md-12 py-15">
+                            <div class="img-box text-center">
+                                <img src="img/shaving-booking.jpeg" alt="shaving-booking" class="img-fluid">
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-12 mt-5 mt-lg-0 py-15">
+                            <form class="m-0">
+                                <div class="row mb-0 mb-md-3">
+                                    <div class="col-md-6 col-12 mb-3 mb-md-0">
+                                        <input type="text" class="form-control" placeholder="Date" aria-label="First name">
+                                    </div>
+                                    <div class="col-md-6 col-12 mb-3 mb-md-0">
+                                        <select class="form-select" aria-label="Default select example">
+                                            <option selected>Time</option>
+                                            <option value="1">07:00 AM</option>
+                                            <option value="2">08:00 AM</option>
+                                            <option value="3">09:00 AM</option>
+                                            <option value="4">10:00 AM</option>
+                                            <option value="5">11:00 AM</option>
+                                            <option value="6">12:00 PM</option>
+                                            <option value="7">01:00 PM</option>
+                                            <option value="8">02:00 PM</option>
+                                            <option value="9">03:00 PM</option>
+                                            <option value="10">04:00 PM</option>
+                                            <option value="11">05:00 PM</option>
+                                            <option value="12">06:00 PM</option>
+                                            <option value="13">07:00 PM</option>
+                                            <option value="14">08:00 PM</option>
+                                            <option value="15">09:00 PM</option>
+                                            <option value="16">10:00 PM</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="row mb-0 mb-md-3 pb-3">
+                                    <div class="col-md-6 col-12 mb-3 mb-md-0">
+                                        <select class="form-select" aria-label="Default select example">
+                                            <option selected>Service</option>
+                                            <option value="0">Hair Styling & Treatments</option>
+                                            <option value="1">Shaves & Hot Towels</option>
+                                            <option value="2">Beard Styling & Treatments</option>
+                                            <option value="3">Signature Package</option>
+                                            <option value="4">Barbershop Facials</option>
+                                            <option value="5">Treatment Lounge</option>
+                                            <option value="6">Wax Couch</option>
+                                            <option value="7">Wedding Package</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-md-6 col-12 mb-3 mb-md-0">
+                                        <select class="form-select" aria-label="Default select example">
+                                            <option selected>Stylist</option>
+                                            <option value="1">Paul Steels</option>
+                                            <option value="2">Sean Dick</option>
+                                            <option value="3">Paul Dos Reis</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="row mb-0 mb-md-3">
+                                    <div class="col-md-6 col-12 mb-3 mb-md-0">
+                                        <input type="text" class="form-control" placeholder="Name" aria-label="First name">
+                                    </div>
+                                    <div class="col-md-6 col-12 mb-3 mb-md-0">
+                                        <input type="tel" class="form-control" placeholder="Phone" aria-label="phone">
+                                    </div>
+                                </div>
+                                <div class="row mb-3">
+                                    <div>
+                                        <input type="email" class="form-control" placeholder="Email" aria-label="Email">
+                                    </div>
+                                </div>
+                                <button type="submit" class="btn btn-primary mx-auto d-block">book now</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+
+
+    <!-- footer -->
+    <footer class="py-80">
+        <div class="container">
+            <div class="row">
+                <div class="footer-logo-box text-center">
+                    <img src="img/footer-logo.png" alt="footer-logo" class="img-fluid">
+                </div>
+                <div class="row mx-auto align-items-center">
+                    <div class="col-lg-5 col-md-12 py-15 text-lg-end text-center">
+                        <p>Phone: +880-123-456-7890</p>
+                        <p>E-mail: info@yourdomain.com</p>
+                    </div>
+                    <div class="col-lg-2 col-md-12 py-15">
+                       <div class="footer-icon mx-auto">
+                            <img src="img/scissors.png" alt="scissor" class="img-fluid">
+                       </div>
+                    </div>
+                    <div class="col-lg-5 col-md-12 py-15 text-lg-start text-center">
+                        <p>#128 Road, Azampur</p>
+                        <p>Dhaka-1230. Bangladesh</p>
+                    </div>
+                </div>
+                <div class="row mx-auto">
+                    <div class="footer-social mt-4">
+                        <ul class="d-flex justify-content-center p-0">
+                            <li class="me-1">
+                                <a href="#"><i class="bi bi-facebook"></i></a>
+                            </li>
+                            <li  class="me-1">
+                                <a href="#"><i class="bi bi-twitter"></i></a>
+                            </li>
+                            <li  class="me-1">
+                                <a href="#"><i class="bi bi-linkedin"></i></a>
+                            </li>
+                            <li  class="me-1">
+                                <a href="#"><i class="bi bi-google"></i></a>
+                            </li>
+                            <li  class="me-1">
+                                <a href="#"><i class="bi bi-pinterest"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <hr>
+                <p class="text-center">Made by<span class="text-primary"> Rudra Bhikadiya</span></p>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+
+
+
+
+    <script src="js/jquery-3.6.0.min.js" type="text/javascript"></script>
+    <script src="js/bootstrap.bundle.min.js" type="text/javascript"></script>
+
+    <script type="text/javascript">
+        $(window).scroll(function () {
+            if ($(window).scrollTop() > 924) {
+
+                $(".navbar").addClass("fixed-header");
+            }
+            else {
+                $(".navbar").removeClass("fixed-header");
+
+            }
+        });
+
+
+        $(document).ready(function () {
+            $('.counter').each(function () {
+                $(this).prop('Counter', 0).animate({
+                    Counter: $(this).text()
+                }, {
+                    duration: 4000,
+                    easing: 'swing',
+                    step: function (now) {
+                        $(this).text(Math.ceil(now));
+                    }
+                });
+            });
+        });
+
+
+    </script>
+</body>
+
+</html>

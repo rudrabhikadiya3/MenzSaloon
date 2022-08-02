@@ -6,101 +6,711 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MenzSaloon | We'll style while you smile</title>
-    
-    <!-- font -->
-    <link rel="stylesheet" href="css/font.css">
 
+    <!-- font -->
+    <link rel="stylesheet" href="css/font.css" type="text/css">
+
+    <!-- bootstrap -->
     <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
+
     <!-- custom stylesheet -->
     <link rel="stylesheet" href="css/style.css" type="text/css">
 
     <!-- icons(bootstap) -->
-    <link rel="stylesheet" href="css/bootstrap-icons.css">
+    <link rel="stylesheet" href="css/bootstrap-icons.css" type="text/css">
+
+    <!-- custom media -->
+    <link rel="stylesheet" href="css/media.css " type="text/css">
 </head>
 
 <body>
 
-    <div class="alert bg-primary text-white alert-dismissible fade show border-0 rounded-0 mb-0" role="alert">
-        <p class="text-center"><strong></i><a href="#" class="link-light ms-1" data-bs-toggle="modal"
-                    data-bs-target="#member">GET MEMBERSHIP</a></strong> and get 50%
-            off in hair and facial treatments
-        </p>
-        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="alert" aria-label="Close"></button>
-    </div>
-
-
-    <!-- Modal -->
-    <div class="modal fade" id="member" tabindex="-1" aria-labelledby="member" aria-hidden="true">
-        <div class="modal-dialog  modal-dialog-centered">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <ul class="nav nav-tabs justify-content-around w-100" id="myTab" role="tablist">
-                        <li class="nav-item" role="presentation">
-                            <button class="nav-link w-100 px-5 active" id="home-tab" data-bs-toggle="tab"
-                                data-bs-target="#home-tab-pane" type="button" role="tab" aria-controls="home-tab-pane"
-                                aria-selected="true">Monthly plan</button>
+    <header>
+        <!-- membership -->
+        <div class="alert bg-primary text-white alert-dismissible fade show border-0 rounded-0 mb-0" role="alert">
+            <p class="text-center text-light"><strong></i><a href="#" class="link-light ms-1" data-bs-toggle="modal"
+                        data-bs-target="#member">GET MEMBERSHIP</a></strong> and get 50%
+                off in hair and facial treatments and other treatments
+            </p>
+            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="alert" aria-label="Close"></button>
+        </div>
+        <!-- navigation menu -->
+        <nav class="navbar navbar-expand-lg  py-0">
+            <div class="container justify-content-between">
+                <a class="navbar-brand" href="index.html">
+                    <img src="img/white-logo.png" alt="logo">
+                </a>
+                <button class="navbar-toggler  bg-white" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon text-primary"></span>
+                </button>
+                <div class="collapse navbar-collapse flex-grow-0" id="navbarSupportedContent">
+                    <ul class="navbar-nav mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link py-0 active" aria-current="page" href="index.html">Home</a>
                         </li>
-                        <li class="nav-item" role="presentation">
-                            <button class="nav-link px-5" id="profile-tab" data-bs-toggle="tab"
-                                data-bs-target="#profile-tab-pane" type="button" role="tab"
-                                aria-controls="profile-tab-pane" aria-selected="false">Yearly plan</button>
+                        <li class="nav-item">
+                            <a class="nav-link py-0" href="about.html">About</a>
                         </li>
-
+                        <li class="nav-item dropdown">
+                            <a class="nav-link py-0 dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">Services</a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="services.html">service 2 column</a></li>
+                                <li><a class="dropdown-item" href="services.html">service 3 column</a></li>
+                                <li><a class="dropdown-item" href="services.html">Single service</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link py-0" href="booking.html">Booking</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link py-0 dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">Pages</a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="#">Accordion</a></li>
+                                <li><a class="dropdown-item" href="#">Alert</a></li>
+                                <li><a class="dropdown-item" href="#">Dropcap</a></li>
+                                <li><a class="dropdown-item" href="#">Team Page</a></li>
+                                <li><a class="dropdown-item" href="#">Pricing</a></li>
+                                <li><a class="dropdown-item" href="#">Tab Page</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link py-0 dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">Contact</a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="contact.html">Contact 1</a></li>
+                                <li><a class="dropdown-item" href="contact.html">Contact 2</a></li>
+                                <li><a class="dropdown-item" href="contact.html">Contact 3</a></li>
+                            </ul>
+                        </li>
+                        <div class="nav-item">
+                            <a href="tel:+1334-4679-3431" class="text-decoration-none nav-link py-0"><i
+                                    class="bi bi-telephone me-2"></i>
+                                823-23-2323</a>
+                        </div>
                     </ul>
                 </div>
-                <button type="button" class="btn-close btn-close-white position-absolute bottom-100 end-0 my-2"
-                    data-bs-dismiss="modal" aria-label="Close"></button>
-                <div class="modal-body">
-                    <div class="tab-content" id="myTabContent">
-                        <div class="tab-pane fade show active" id="home-tab-pane" role="tabpanel"
-                            aria-labelledby="home-tab" tabindex="0">
-                            <!-- Monthly plans content -->
-                            <form>
-                                <div class="mb-3">
-                                    <input type="text" class="form-control" placeholder="Full name">
-                                  </div>
-                                <div class="mb-3">
-                                  <input type="email" class="form-control" aria-describedby="emailHelp" placeholder="Enter Email">
+            </div>
+        </nav>
+    </header>
+    <main>
+        <!-- slider -->
+        <section class="slider">
+            <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active ">
+                        <div class="d-block w-100 slide1">
+                            <div class="container h-100">
+                                <div class="row justify-content-center align-items-center h-100">
+                                    <div class="slider-content w-100 text-center">
+                                        <p class="mb-5">WE KNOW WHAT HAIR CUT SUITS YOU</p>
+                                        <h1 class="display-5">MAKING YOUR LOOK
+                                            <span class="d-block text-primary">AWESOME & MANLY</span>
+                                        </h1>
+                                        <button type="button" class="btn btn-outline-primary">book now</button>
+                                    </div>
                                 </div>
-                                
-                                
-                                <ul class="list-group my-4 ">
-                                    <li class="list-group-item border-0 px-0"><i class="bi bi-check-lg text-success me-1"></i>Free hair and beard treatments</li>
-                                    <li class="list-group-item border-0 px-0"><i class="bi bi-check-lg text-success me-1"></i>Get personal expert stylist</li>
-                                    <li class="list-group-item border-0 px-0"><i class="bi bi-x-lg text-danger me-1"></i>Get 70% off in facial and other tratments</li>
-                                    <li class="list-group-item border-0 px-0"><i class="bi bi-check-lg text-success me-1"></i>No waiting / que</li>
-                                    <li class="list-group-item border-0 px-0"><i class="bi bi-check-lg text-success me-1"></i>1 visit/month</li>
-                                  </ul>
-                                  <div class="mb-3 form-check">
-                                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                                    <label class="form-check-label" for="exampleCheck1" >
-                                        <a href="#" class="text-decoration-none">Terms & Conditions</a>
-                                    </label>
-                                  </div>
-                                <button type="submit" class="btn btn-primary w-100">Just pay $29/month</button> 
-                              </form>
-                              
+                            </div>
                         </div>
-                        <div class="tab-pane fade" id="profile-tab-pane" role="tabpanel" aria-labelledby="profile-tab"
-                            tabindex="0">.345345..</div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="d-block w-100 slide2">
+                            <div class="container h-100">
+                                <div class="row justify-content-center align-items-center h-100">
+                                    <div class="slider-content w-100 text-center">
+                                        <p class="mb-5">CLASSIC REFUGE HAIRCUTS AND SHAVES</p>
+                                        <h1 class="display-5">OUR HAIR STYLES
+                                            <span class="d-block text-primary">ENHANCES YOUR SMILE</span>
+                                        </h1>
+                                        <button type="button" class="btn btn-outline-primary">book now</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item ">
+                        <div class="d-block w-100 slide3">
+                            <div class="container h-100">
+                                <div class="row justify-content-center align-items-center h-100">
+                                    <div class="slider-content w-100 text-center">
+                                        <p class="mb-5">WE KNOW WHAT HAIR CUT SUITS YOU</p>
+                                        <h1 class="display-5">WHERE MEN AND BOYS
+                                            <span class="d-block text-primary">WANT TO LOOK THEIR VERY BEST</span>
+                                        </h1>
+                                        <button type="button" class="btn btn-outline-primary">book now</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                </button>
+            </div>
+        </section>
+        <!-- services -->
+        <section class="services py-120">
+            <div class="container">
+                <div class="row ">
+                    <div class="section-title text-center ">
+                        <img src="img/title-img-2.png" alt="title-img-2" class="img-fluid">
+                        <h2 class="text-uppercase fs-2 text-light">Popular <span class="fw-bolder">services</span></h2>
+                        <p class="mb-5">A wide range of male grooming services under one roof</p>
+                    </div>
+                    <div class="service-boxes d-flex text-center flex-wrap">
+                        <div class="service-box col-lg-3 col-md-6 p-3 ">
+                            <div class="service-icon mx-auto p-3">
+                                <img src="img/001-haircut.png" alt="001-haircut" class="img-fluid ">
+                            </div>
+                            <h4 class="fs-4 text-light">HAIR STYLING</h4>
+                            <p>Get the best from your thick hair by choosing a great style and using the right products
+                                for the style you’re after.</p>
+                        </div>
+                        <div class="service-box col-lg-3 col-md-6 p-3 ">
+                            <div class="service-icon mx-auto p-3">
+                                <img src="img/002-hairstyle.png" alt="001-haircut" class="img-fluid ">
+                            </div>
+                            <h4 class="fs-4 text-light">BEARD TRIM</h4>
+                            <p>Every men wants to grow out beard and see just out of curiosity how he looks. If this is
+                                you, then welcome to the club.</p>
+                        </div>
+                        <div class="service-box col-lg-3 col-md-6 p-3 ">
+                            <div class="service-icon mx-auto p-3">
+                                <img src="img/003-hair-dryer.png" alt="001-haircut" class="img-fluid ">
+                            </div>
+                            <h4 class="fs-4 text-light">HAIR COLOR</h4>
+                            <p>Color is an underutilized way of adding a unique style and aesthetic appeal to your hair.
+                                We are here for you.</p>
+                        </div>
+                        <div class="service-box col-lg-3  col-md-6 p-3 ">
+                            <div class="service-icon mx-auto p-3">
+                                <img src="img/001-beauty-treatment.png" alt="001-haircut" class="img-fluid ">
+                            </div>
+                            <h4 class="fs-4 text-light">CLEANSING FECIAL</h4>
+                            <p>If you’re washing your face with bar soap and water and running out the door, then it’s
+                                time to step up your skincare.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- team -->
+        <section class="team py-120">
+            <div class="container">
+                <div class="row">
+                    <div class="section-title text-center">
+                        <img src="img/title-img-4.png" alt="title-img-2" class="img-fluid">
+                        <h2 class="text-uppercase fs-2">Expert <span class="fw-bolder">stylist</span></h2>
+                        <p class="mb-5">Our stylist offers traditional and contemporary services along with our very own
+                            treatment</p>
+                    </div>
+                    <div class="team-cards d-flex flex-wrap">
+                        <div class="team-card mb-4 col-lg-4 col-md-6 py-15">
+                            <div class="team-img-box position-relative">
+                                <img src="img/team-dark-1.jpeg" alt="team-dark-1" class="img-fluid d-block">
+                                <div class="triangle position-absolute">
+                                    <div class="position-absolute end-0 mt-5 me-2">
+                                        <a href="#"> <i class="bi bi-facebook fs-3 "></i></a>
+                                        <a href="#"> <i class="bi bi-linkedin fs-4 my-3"></i></a>
+                                        <a href="#"> <i class="bi bi-twitter fs-3 "></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="team-card-content text-center border-top-0 ">
+                                <h4 class="m-0 text-light">Paul Steels</h4>
+                                <p>Master Barber & Color Expert</p>
+                            </div>
+                        </div>
+                        <div class="team-card mb-4 col-lg-4 col-md-6 py-15">
+                            <div class="team-img-box position-relative">
+                                <img src="img/team-dark-2.jpeg" alt="team-dark-1" class="img-fluid d-block">
+                                <div class="triangle position-absolute">
+                                    <div class="position-absolute end-0 mt-5 me-2">
+                                        <a href="#"> <i class="bi bi-facebook fs-3 "></i></a>
+                                        <a href="#"> <i class="bi bi-linkedin fs-4 my-3"></i></a>
+                                        <a href="#"> <i class="bi bi-twitter fs-3 "></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="team-card-content text-center border-top-0">
+                                <h4 class="m-0 text-light">Sean Dick</h4>
+                                <p>Shavinga and Beard Expert</p>
+                            </div>
+                        </div>
+                        <div class="team-card mb-4 col-lg-4 col-md-6 py-15 mx-md-auto">
+                            <div class="team-img-box position-relative">
+                                <img src="img/team-dark-3.jpeg" alt="team-dark-1" class="img-fluid d-block">
+                                <div class="triangle position-absolute">
+                                    <div class="position-absolute end-0 mt-5 me-2">
+                                        <a href="#"> <i class="bi bi-facebook fs-3"></i></a>
+                                        <a href="#"> <i class="bi bi-linkedin fs-4 my-3"></i></a>
+                                        <a href="#"> <i class="bi bi-twitter fs-3"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="team-card-content text-center border-top-0">
+                                <h4 class="m-0 text-light">Paul Dos Reis</h4>
+                                <p>Master Barber & Restyle Artist</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- contact -->
+        <section class="contact py-120 pb-lg-0">
+            <div class="container">
+                <div class="row">
+                    <div class="section-title text-center text-light">
+                        <img src="img/title-img-3.png" alt="title-img-2" class="img-fluid">
+                        <h2 class="text-uppercase fs-2">We are <span class="fw-bolder">availabe</span></h2>
+                        <p class="mb-5">Dedicated To Providing Excellence In Our Service</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-5 col-md-12 py-15">
+                        <div class="opening-time">
+                            <h4 class="mb-3">Opening time</h4>
+                            <div class="d-flex justify-content-between">
+                                <p>Monday to Wednesday</p>
+                                <p>07.00 am - 10:00 pm</p>
+                            </div>
+                            <div class="d-flex justify-content-between">
+                                <p>Friday and Saturday</p>
+                                <p>12.00 pm - 10:30 pm</p>
+                            </div>
+                        </div>
+                        <div class="closing-time">
+                            <h4 class="mb-3">Closing time</h4>
+                            <div class="d-flex justify-content-between">
+                                <p>Friday and Saturday</p>
+                                <p>12.00 pm - 10:30 pm</p>
+                            </div>
+                            <div class="d-flex justify-content-between">
+                                <p>Sunday</p>
+                                <p>Weekend</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-2 py-15 d-none d-lg-block ">
+                        <img src="img/scissor.png" alt="scissor" class="img-fluid d-block text-center">
+                    </div>
+                    <div class="col-lg-5 col-md-12 py-15">
+                        <form>
+                            <div class="row mb-3">
+                                <div class="col">
+                                    <input type="text" class="form-control" placeholder="Date" aria-label="First name">
+                                </div>
+                                <div class="col">
+                                    <select class="form-select" aria-label="Default select example">
+                                        <option selected>Time</option>
+                                        <option value="1">07:00 AM</option>
+                                        <option value="2">08:00 AM</option>
+                                        <option value="3">09:00 AM</option>
+                                        <option value="4">10:00 AM</option>
+                                        <option value="5">11:00 AM</option>
+                                        <option value="6">12:00 PM</option>
+                                        <option value="7">01:00 PM</option>
+                                        <option value="8">02:00 PM</option>
+                                        <option value="9">03:00 PM</option>
+                                        <option value="10">04:00 PM</option>
+                                        <option value="11">05:00 PM</option>
+                                        <option value="12">06:00 PM</option>
+                                        <option value="13">07:00 PM</option>
+                                        <option value="14">08:00 PM</option>
+                                        <option value="15">09:00 PM</option>
+                                        <option value="16">10:00 PM</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="row mb-3 pb-3">
+                                <div class="col">
+                                    <select class="form-select" aria-label="Default select example">
+                                        <option selected>Service</option>
+                                        <option value="0">Hair Styling & Treatments</option>
+                                        <option value="1">Shaves & Hot Towels</option>
+                                        <option value="2">Beard Styling & Treatments</option>
+                                        <option value="3">Signature Package</option>
+                                        <option value="4">Barbershop Facials</option>
+                                        <option value="5">Treatment Lounge</option>
+                                        <option value="6">Wax Couch</option>
+                                        <option value="7">Wedding Package</option>
+                                    </select>
+                                </div>
+                                <div class="col">
+                                    <select class="form-select" aria-label="Default select example">
+                                        <option selected>Stylist</option>
+                                        <option value="1">Paul Steels</option>
+                                        <option value="2">Sean Dick</option>
+                                        <option value="3">Paul Dos Reis</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="row mb-3">
+                                <div class="col">
+                                    <input type="text" class="form-control" placeholder="Name" aria-label="First name">
+                                </div>
+                                <div class="col">
+                                    <input type="tel" class="form-control" placeholder="Phone" aria-label="phone">
+                                </div>
+                            </div>
+                            <div class="row mb-3">
+                                <div>
+                                    <input type="email" class="form-control" placeholder="Email" aria-label="Email">
+                                </div>
+                            </div>
+                            <button type="submit" class="btn btn-primary mx-auto d-block">book now</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- testimonials -->
+        <section class="testimonials py-120">
+            <div class="container">
+                <div class="row">
+                    <div class="section-title text-center ">
+                        <img src="img/title-img-1.png" alt="title-img-2" class="img-fluid">
+                        <h2 class="text-uppercase fs-2">happy <span class="fw-bold">clients</span></h2>
+                        <p class="mb-5 fs-6">The staff interact with the client and make sure that the Client gets 100%
+                            satisfaction</p>
+                    </div>
+                    <div id="testimonials-slider" class="carousel slide" data-bs-ride="true">
+
+                        <div class="carousel-inner">
+                            <div class="carousel-item active position-static">
+                                <div class="col-8 mx-auto">
+                                    <p class="mb-4 text-center fs-6">I was a bit skeptical at start to try out a new
+                                        salon
+                                        for my haircut, It was a good looking salon so I finally decided to give it a
+                                        try. I had an amazing experience from the hospitality I received to the haircut
+                                        I had. Technically sound and Well behaved staff. Their rates are reasonable too.
+                                        Must try their cocktail blowdrys.</p>
+                                    <h4 class="text-center">Abraham</h4>
+                                </div>
+
+                            </div>
+                            <div class="carousel-item position-static">
+                                <div class="col-8 mx-auto">
+                                    <p class="mb-4 text-center fs-6">
+                                        I had appointment for 6.30. As a working lady I was late to reach the place I
+                                        got in by 7.50 the gal who called me for confirmation was so polite while
+                                        talking even when I was late. That was sweet. The stuff did it perfect.Their
+                                        rates are reasonable too. Must try their cocktail blowdrys. I had an amazing
+                                        experience from the hospitality
+                                    </p>
+                                    <h4 class="text-center">David</h4>
+                                </div>
+                            </div>
+                            <div class="carousel-item position-static">
+                                <div class="col-8 mx-auto">
+                                    <p class="mb-4 text-center fs-6">
+                                        Services are very good. Their rates are also very reasonable compare to other
+                                        professional salons. I was also impressed with the hospitality and the attention
+                                        I got from the staff.Their rates are reasonable too. Must try their cocktail
+                                        blowdrys. who called me for confirmation was so polite
+                                    </p>
+                                    <h4 class="text-center">Lincoln</h4>
+                                </div>
+
+                            </div>
+
+                        </div>
+                        <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#testimonials-slider" data-bs-slide-to="0"
+                                class="active" aria-current="true" aria-label="Slide 1"></button>
+                            <button type="button" data-bs-target="#testimonials-slider" data-bs-slide-to="1"
+                                aria-label="Slide 2"></button>
+                            <button type="button" data-bs-target="#testimonials-slider" data-bs-slide-to="2"
+                                aria-label="Slide 3"></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- about -->
+        <section class="about">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-5 col-md-12 py-15 text-center">
+                        <img src="img/stylist-1.png" alt="stylist-1" class="img-fluid">
+                    </div>
+                    <div class="col-lg-7 col-md-12 text-lg-start text-center py-lg-0 py-5 py-15">
+                        <div class="contact-cotent mb-4">
+                            <h2>Why Choose <b>MenzSallon</b></h2>
+                            <p class="text-uppercase fw-bold fs-6 mb-2">A cultured hair and beauty salon situated in the
+                                heart of Paddington</p>
+                            <p class="mb-2 fs-6">With over 20 years of experience, we recognize the importance of
+                                internationalization for company growth. Approximately 25% of our clients have an
+                                international presence.</p>
+                            <p class="mb-2 fs-6">Menz Salon is a classical male grooming and traditional Barber shop.
+                                Providing a comprehensive menu of traditional and contemporary services towards men's
+                                hair, beards, hot towel shaves, facials, and body treatments. A classic Barber Shop
+                                offering grooming services and products in the true sense.</p>
+                        </div>
+                        <div class="d-flex flex-wrap" id="counter">
+                            <div class="col-lg-4 col-12 py-15 about-card ps-0 mb-5 mv-lg-0">
+                                <img src="img/001-barber.png" alt="Barber" class="img-fluid text-lg-start text-center mb-3">
+                                <h2 class="counter-value mb-4 fw-bold display-3" data-count="20"></h2>
+                                <h4 class="fs-5 text-capitalize ">Professional Barbers</h4>
+                            </div>
+                            <div class="col-lg-4 col-12 py-15 about-card mb-5 mv-lg-0">
+                                <img src="img/002-man-hair.png" alt="man-hair"
+                                    class="img-fluid text-lg-start text-center mb-3">
+                                <h2 class="counter-value mb-4 fw-bold display-3" data-count="786"></h2>
+                                <h4 class="fs-5 text-capitalize ">Stunning Hair Styles</h4>
+                            </div>
+                            <div class="col-lg-4 col-12 py-15 about-card mb-5 mv-lg-0">
+                                <img src="img/003-teen.png" alt="teen" class="img-fluid text-lg-start text-center mb-3">
+                                <h2 class="counter-value mb-4 fw-bold display-3" data-count="3249"></h2>
+                                <h4 class="fs-5 text-capitalize ">Satisfied Clients</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- offer -->
+        <section class="offer">
+            <div class="container">
+                <div class="row text-center text-lg-start">
+                    <div class="col-12 d-flex pe-lg-0">
+                        <div class="col-lg-8 col-md-12 py-80 offer-content">
+                            <h2>Get 25% off your first mens haircut.</h2>
+                            <p class="text-white">You can ask for a first visit voucher.The voucher is valid at any of
+                                our salons. The 25% discount only applies to a mens haircut with a senior stylist.</p>
+                            <button class="btn btn-primary">visit now</button>
+                        </div>
+                        <div class="col-4 d-none d-lg-block py-15 position-relative ">
+                            <img src="img/offer-model-1.jpeg" alt="offer-model-1"
+                                class="img-fluid position-absolute top-0">
+                            <img src="img/offer-modal-2.jpeg" alt="offer-model-2"
+                                class="img-fluid position-absolute bottom-0 end-0 ">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Modal -->
+        <div class="modal fade" id="member" tabindex="-1" aria-labelledby="member" aria-hidden="true">
+            <div class="modal-dialog  modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <ul class="nav nav-tabs justify-content-around w-100" id="myTab" role="tablist">
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link w-100 px-5 active" id="home-tab" data-bs-toggle="tab"
+                                    data-bs-target="#home-tab-pane" type="button" role="tab"
+                                    aria-controls="home-tab-pane" aria-selected="true">Monthly plan</button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link px-5" id="profile-tab" data-bs-toggle="tab"
+                                    data-bs-target="#profile-tab-pane" type="button" role="tab"
+                                    aria-controls="profile-tab-pane" aria-selected="false">Yearly plan</button>
+                            </li>
+
+                        </ul>
+                    </div>
+                    <button type="button" class="btn-close btn-close-white position-absolute bottom-100 end-0 my-2"
+                        data-bs-dismiss="modal" aria-label="Close"></button>
+                    <div class="modal-body">
+                        <div class="tab-content" id="myTabContent">
+                            <div class="tab-pane fade show active" id="home-tab-pane" role="tabpanel"
+                                aria-labelledby="home-tab" tabindex="0">
+                                <!-- Monthly plans content -->
+                                <form>
+                                    <div class="mb-3">
+                                        <input type="text" class="form-control" placeholder="Full name">
+                                    </div>
+                                    <div class="mb-3">
+                                        <input type="email" class="form-control" aria-describedby="emailHelp"
+                                            placeholder="Enter Email">
+                                    </div>
+
+
+                                    <ul class="list-group my-4 ">
+                                        <li class="list-group-item border-0 px-0"><i
+                                                class="bi bi-check-lg text-success me-1"></i>Free hair and beard
+                                            treatments</li>
+                                        <li class="list-group-item border-0 px-0"><i
+                                                class="bi bi-check-lg text-success me-1"></i>Get personal expert stylist
+                                        </li>
+                                        <li class="list-group-item border-0 px-0"><i
+                                                class="bi bi-check-lg text-success me-1"></i>Get 50% off in facial and
+                                            other tratments</li>
+                                        <li class="list-group-item border-0 px-0"><i
+                                                class="bi bi-check-lg text-success me-1"></i>No waiting / que</li>
+                                        <li class="list-group-item border-0 px-0"><i
+                                                class="bi bi-check-lg text-success me-1"></i>1 visit/month</li>
+                                    </ul>
+                                    <div class="mb-3 form-check">
+                                        <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                        <label class="form-check-label" for="exampleCheck1">
+                                            <a href="#" class="text-decoration-none">Terms & Conditions</a>
+                                        </label>
+                                    </div>
+                                    <button type="submit" class="btn btn-primary w-100">Just pay $29/month</button>
+                                </form>
+
+                            </div>
+                            <div class="tab-pane fade" id="profile-tab-pane" role="tabpanel"
+                                aria-labelledby="profile-tab" tabindex="0">
+                                <!-- Monthly plans content -->
+                                <form>
+                                    <div class="mb-3">
+                                        <input type="text" class="form-control" placeholder="Full name">
+                                    </div>
+                                    <div class="mb-3">
+                                        <input type="email" class="form-control" aria-describedby="emailHelp"
+                                            placeholder="Enter Email">
+                                    </div>
+                                    <ul class="list-group my-4 ">
+                                        <li class="list-group-item border-0 px-0"><i
+                                                class="bi bi-check-lg text-success me-1"></i>Free hair and beard
+                                            treatments</li>
+                                        <li class="list-group-item border-0 px-0"><i
+                                                class="bi bi-check-lg text-success me-1"></i>Get personal expert stylist
+                                        </li>
+                                        <li class="list-group-item border-0 px-0"><i
+                                                class="bi bi-check-lg text-success me-1"></i>Get 70% off in facial and
+                                            other tratments</li>
+                                        <li class="list-group-item border-0 px-0"><i
+                                                class="bi bi-check-lg text-success me-1"></i>No waiting / que</li>
+                                        <li class="list-group-item border-0 px-0"><i
+                                                class="bi bi-check-lg text-success me-1"></i>2 visit/month</li>
+                                    </ul>
+                                    <div class="mb-3 form-check">
+                                        <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                        <label class="form-check-label" for="exampleCheck1">
+                                            <a href="#" class="text-decoration-none">Terms & Conditions</a>
+                                        </label>
+                                    </div>
+                                    <button type="submit" class="btn btn-primary">Just pay $229/year</button>
+                                </form>
+                            </div>
+                        </div>
                     </div>
                 </div>
 
             </div>
         </div>
-    </div>
+    </main>
 
-
-
-
-
-
-
-
-
+    <!-- footer -->
+    <footer class="py-80">
+        <div class="container">
+            <div class="row">
+                <div class="footer-logo-box text-center">
+                    <img src="img/footer-logo.png" alt="footer-logo" class="img-fluid">
+                </div>
+                <div class="row mx-auto align-items-center">
+                    <div class="col-lg-5 col-md-12 py-15 text-lg-end text-center">
+                        <p>Phone: +880-123-456-7890</p>
+                        <p>E-mail: info@yourdomain.com</p>
+                    </div>
+                    <div class="col-lg-2 col-md-12 py-15">
+                        <div class="footer-icon mx-auto">
+                            <img src="img/scissors.png" alt="scissor" class="img-fluid">
+                        </div>
+                    </div>
+                    <div class="col-lg-5 col-md-12 py-15 text-lg-start text-center">
+                        <p>#128 Road, Azampur</p>
+                        <p>Dhaka-1230. Bangladesh</p>
+                    </div>
+                </div>
+                <div class="row mx-auto">
+                    <div class="footer-social mt-4">
+                        <ul class="d-flex justify-content-center p-0">
+                            <li class="me-1">
+                                <a href="#"><i class="bi bi-facebook"></i></a>
+                            </li>
+                            <li class="me-1">
+                                <a href="#"><i class="bi bi-twitter"></i></a>
+                            </li>
+                            <li class="me-1">
+                                <a href="#"><i class="bi bi-linkedin"></i></a>
+                            </li>
+                            <li class="me-1">
+                                <a href="#"><i class="bi bi-google"></i></a>
+                            </li>
+                            <li class="me-1">
+                                <a href="#"><i class="bi bi-pinterest"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <hr>
+                <p class="text-center">Made by<span class="text-primary"> Rudra Bhikadiya</span></p>
+            </div>
+        </div>
+    </footer>
+    
 
     <script src="js/jquery-3.6.0.min.js" type="text/javascript"></script>
     <script src="js/bootstrap.bundle.min.js" type="text/javascript"></script>
+
+    <script type="text/javascript">
+        $(window).scroll(function () {
+            if ($(window).scrollTop() > 924) {
+
+                $(".navbar").addClass("fixed-header");
+            }
+            else {
+                $(".navbar").removeClass("fixed-header");
+            }
+        });
+
+
+        $(document).ready(function () {
+            $('.counter').each(function () {
+                $(this).prop('Counter', 0).animate({
+                    Counter: $(this).text()
+                }, {
+                    duration: 4000,
+                    easing: 'swing',
+                    step: function (now) {
+                        $(this).text(Math.ceil(now));
+                    }
+                });
+            });
+        });
+        var a = 0;
+        $(window).scroll(function () {
+            var oTop = $("#counter").offset().top - window.innerHeight;
+            if (a == 0 && $(window).scrollTop() > oTop) {
+                $(".counter-value").each(function () {
+                    var $this = $(this),
+                        countTo = $this.attr("data-count");
+                    $({
+                        countNum: $this.text()
+                    }).animate(
+                        {countNum: countTo},
+
+                        {
+                            duration: 2000,
+                            easing: "swing",
+                            step: function () {
+                                $this.text(Math.floor(this.countNum));
+                            },
+                            complete: function () {
+                                $this.text(this.countNum);
+                            }
+                        }
+                    );
+                });
+                a = 1;
+            }
+        });
+
+    </script>
 </body>
 
 </html>
