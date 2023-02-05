@@ -1,3 +1,1 @@
-# MenzSaloon
-First bootstrap project 
-Fully responsive saloon website template
+Pixel perfect Saloon website template
